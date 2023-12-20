@@ -1,26 +1,18 @@
+// src/App.tsx
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import HomeContent from './pages/HomeContent';  // Update the import path if needed
+// import Header from '../src/components/common/Header.tsx';
+// import Footer from '../src/components/common/Footer.tsx';
+import './assets/styles/App.css'
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Header /> */}
+      <HomeContent />
+      {/* <Footer /> */}
     </div>
   );
-}
+};
 
 export default App;
