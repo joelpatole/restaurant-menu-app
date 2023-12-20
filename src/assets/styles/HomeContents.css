@@ -1,0 +1,65 @@
+/* src/assets/styles/HomeContent.css */
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1a1919;
+    text-shadow: 0 0 10px rgba(48, 185, 121, 0.7); 
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    color: #1a1919;
+    text-shadow: 0 0 10px rgba(48, 185, 121, 0.7);
+  }
+  
+  /* Media query for screens with a maximum width of 600px */
+  @media (max-width: 600px) {
+    .heading {
+      font-size: 1.5rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  }
+
+   /* assets/styles/ButtonStyles.css */
+
+   .category-button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #fefefe;
+    color: #0f0101;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px rgba(134, 235, 129, 0.5);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use a modern sans-serif font */
+    font-size: 1.2rem; /* Adjust font size for a modern look */
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  /* .category-button:hover {
+    background-color: #6ccd71;
+    box-shadow: 0 0 10px rgb(246, 247, 246);
+  } */
+
+  .category-button:hover {
+    background-color: rgba(108, 205, 113, 0.7); /* Set alpha value to control transparency */
+    box-shadow: 0 0 10px rgba(246, 247, 246, 0.7); /* Set alpha value to control transparency */
+    text-shadow: 0 0 10px rgba(202, 216, 10, 0.7);
+  }
+  
+  
