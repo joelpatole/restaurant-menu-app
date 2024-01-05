@@ -1,14 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'
+import { Link, Navigate } from 'react-router-dom'
 import '../assets/styles/HomeContents.css';
 import '../assets/styles/Home.css';
 import { getCategories } from '../services/api';
+import  {useNavigate}  from 'react-router-dom';
 
 const HomeContent: React.FC = () => {
+  const navigate = useNavigate()
   // State to store the categories fetched from the API
   const [categories, setCategories] = useState<string[]>([]);
 
+  // State to store the selected category
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+
   useEffect(() => {
+    
     const fetchCategories = async()=>{
         try {
             const categoriesFromAPI = await getCategories();
@@ -20,6 +26,18 @@ const HomeContent: React.FC = () => {
     }
     fetchCategories();
   }, []); // Empty dependency array to fetch data only once on component mount
+
+   // Function to handle button click
+   const handleButtonClick = (category: string) => {
+    
+    // Save the selected category in the state
+    setSelectedCategory(category);
+  
+    // For example, navigate to another page using navigate function
+    // navigate(`/category/${category}`);
+    console.log(category);
+    navigate(`/category/${category}`);
+  };
 
   return (
     <div className="container">
@@ -33,10 +51,10 @@ const HomeContent: React.FC = () => {
       <div className="category-container">
         {categories.map(category => (
             //we need to route to other page to show whole info of that category
-        //   <Link to={`/category/${category}`} key={category}>
-        //     <button className="category-button">{category}</button>
-        //   </Link>
-        <button className="category-button">{category}</button>
+          <Link to={`/category/${category}`} key={category}>
+            <button className="category-button">{category}</button>
+          </Link>
+        // <button className="category-button" onClick={() => handleButtonClick(category)}>{category}</button>
         ))}
       </div>
     </div>
