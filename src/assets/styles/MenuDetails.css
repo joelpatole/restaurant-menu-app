@@ -1,0 +1,42 @@
+/* pages/MenuDetails.css */
+body {
+    background-color: #fff; /* Set the background color to white */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .menu-details-container {
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff; /* Set the background color to white */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .category-heading {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .category-name {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  /* Media query for screens with a maximum width of 600px (adjust as needed) */
+  @media (max-width: 600px) {
+    .menu-details-container {
+      padding: 10px;
+    }
+  
+    .category-heading {
+      font-size: 1.5rem;
+    }
+  
+    .category-name {
+      font-size: 1rem;
+    }
+  }
+  

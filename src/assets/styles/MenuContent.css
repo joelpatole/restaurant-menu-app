@@ -1,0 +1,98 @@
+.menu-content {
+    /* Overall styling for the menu content container */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+  }
+  
+  /* .menu-header { */
+    /* Styling for the menu header */
+    /* font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+  align-items: center;
+  } */
+
+  .menu-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border: none; /* Remove border */
+    font-weight: bold; /* Add boldness */
+  }
+  
+  .menu-items {
+    /* Styling for the menu items container */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .menu-item {
+    /* Styling for individual menu items */
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item-quantity {
+    /* Styling for the quantity indicator */
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .menu-item-name {
+    /* Styling for the food name */
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+    font-size: 18px; /* Updated font size */
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'YourChosenFont', sans-serif; /* Replace 'YourChosenFont' with the actual font you want to use */
+    color: #000000;
+    text-align: center;
+  }
+  
+  .menu-item-price {
+    /* Styling for the price */
+    font-size: 19px;
+    color: #008000;
+    text-align: right; /* Align text to the right */
+    width: 100%; 
+    margin-left: 0;
+    padding-left: 0;
+    font-weight: bold;
+  }
+  
+  .menu-item-additives {
+    /* Styling for the additives */
+    font-size: 15px;
+    color: #727272;
+    margin-bottom: -5px;
+  }
+
+  .back-button {
+    background: none; /* Remove default button background */
+    border: none; /* Remove border */
+    cursor: pointer; /* Indicate interactivity */
+    padding: 0; /* Remove default padding */
+    margin-right: 10px; /* Add spacing */
+  }
+  
+  .back-button .fas {
+    font-size: 1.5rem; /* Adjust arrow size */
+    color: #333; /* Set arrow color */
+  }
+  
+  .menu-title {
+    margin: 0; /* Remove default margin */
+  }
