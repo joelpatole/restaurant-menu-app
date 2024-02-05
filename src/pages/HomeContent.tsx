@@ -51,10 +51,10 @@ const HomeContent: React.FC = () => {
       <div className="category-container">
         {categories.map(category => (
             //we need to route to other page to show whole info of that category
-          <Link to={`/category/${category}`} key={category}>
-            <button className="category-button">{category}</button>
-          </Link>
-        // <button className="category-button" onClick={() => handleButtonClick(category)}>{category}</button>
+          // <Link to={`/category/${category}`} key={category}>
+          //   <button className="category-button">{category}</button>
+          // </Link>
+        <button className="category-button" onClick={() => handleButtonClick(category)}>{category}</button>
         ))}
       </div>
     </div>
