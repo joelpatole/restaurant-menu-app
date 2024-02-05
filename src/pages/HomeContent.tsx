@@ -36,7 +36,7 @@ const HomeContent: React.FC = () => {
     // For example, navigate to another page using navigate function
     // navigate(`/category/${category}`);
     console.log(category);
-    navigate(`/category/${category}`);
+    navigate(`/menuContent/${category}`);
   };
 
   return (

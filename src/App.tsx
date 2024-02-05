@@ -6,6 +6,7 @@ import HomeContent from './pages/HomeContent';  // Update the import path if nee
 import './assets/styles/App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MenuDetails from './pages/MenuDetails';
+import MenuContent from './pages/MenuContent';
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
     <Routes>
         <Route path="/" element={<HomeContent />} />
         <Route path="/category/:category" element={<MenuDetails />} />
+        <Route path="/menuContent/:category" element={<MenuContent />} />
       </Routes>
   {/* <App /> */}
     </Router>
