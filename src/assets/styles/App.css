@@ -8,8 +8,15 @@
 }
 
 body {
-  background-image: url(../images/restaurant-1284351.jpg); /* Replace with your image path */
+  /* background-image: url(../images/restaurant-1284351.jpg); Replace with your image path */
   background-size: cover; /* Ensures image covers the entire element */
   background-position: center; /* Positions the image in the center */
   background-repeat: no-repeat; /* Prevents image repetition */
+}
+
+.container{
+  background-image: url(../images/restaurant-1284351.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
